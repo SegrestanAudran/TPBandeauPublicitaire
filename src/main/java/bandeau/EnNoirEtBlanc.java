@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 package bandeau;
-
+//Le noir et blanc
 import java.awt.Color;
 
 /**
