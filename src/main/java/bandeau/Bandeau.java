@@ -1,4 +1,3 @@
-//Repris par Audran et Yasmina le 10/12/2018
 package bandeau;
 
 import javax.swing.*;
