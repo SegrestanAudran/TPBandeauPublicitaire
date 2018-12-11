@@ -11,8 +11,8 @@ package bandeau;
  */
 public abstract class EFFET {
     
-    public void affichesur(Bandeau b){
+    public abstract void afficheSur(Bandeau b);
         
-    }
+    
     
 }

@@ -13,20 +13,14 @@ import java.awt.Color;
  */
 public class EnNoirEtBlanc extends EFFET{
     private String message;
-    private Bandeau Bandeau;
     private int delaie;
     
     public EnNoirEtBlanc(String message,int delaie){
         this.message =message;
         this.delaie=delaie;
     }
-
-    public EnNoirEtBlanc() {
-    }
     
-    
-    
-    public void affichesur(Bandeau B1){
+    public void afficheSur(Bandeau B1){
         B1.setBackground(Color.black);
         B1.setForeground(Color.white);
         B1.setMessage(message);

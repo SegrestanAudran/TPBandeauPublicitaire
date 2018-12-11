@@ -23,7 +23,7 @@ public class Scenario{
     
     public void afficheSur(Bandeau monBandeau){
         for(EFFET e:listeEffet){
-            e.affichesur(monBandeau);
+            e.afficheSur(monBandeau);
         }
     }
     

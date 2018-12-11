@@ -13,7 +13,9 @@ public class ExempleDUtilisation {
     
     public void exemple() {
         EnNoirEtBlanc effet = new EnNoirEtBlanc("Coucou c'est moi",1000);
+        Rotation effet1 = new Rotation("Coucou je tourne !",1000,90);
         test.addeffet(effet, 1);
+        test.addeffet(effet1, 4);
         test.afficheSur(monBandeau);
        /* Font font = monBandeau.getFont();
         Color back = monBandeau.getBackground();
