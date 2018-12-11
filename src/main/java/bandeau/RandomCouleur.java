@@ -26,12 +26,16 @@ public class RandomCouleur extends EFFET{
     
     
     public void afficheSur(Bandeau B1){
-            Random rand = new Random();
-            float r = rand.nextFloat();
-            float g = rand.nextFloat();
-            float b = rand.nextFloat();
+        Random rand = new Random();
+        float r = rand.nextFloat();
+        float g = rand.nextFloat();
+        float b = rand.nextFloat();
         Color randomColor = new Color(r, g, b);
-        B1.setBackground(Color.black);
+        float rB = rand.nextFloat();
+        float gB = rand.nextFloat();
+        float bB = rand.nextFloat();
+        Color randomBackground = new Color(rB,gB,bB);
+        B1.setBackground(randomBackground);
         B1.setForeground(randomColor);
         B1.setMessage(message);
        // B1.setForeground(Color.black);

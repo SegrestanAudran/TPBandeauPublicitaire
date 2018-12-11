@@ -15,6 +15,7 @@ public class Clignoter extends EFFET{
     private String message;
     // private Bandeau Bandeau;
     private int delaie;
+    private Color backgroundColor;
     
     public Clignoter(String message,int delaie){
         this.message =message;
@@ -25,15 +26,16 @@ public class Clignoter extends EFFET{
     
     public void afficheSur(Bandeau B1){
         
-        B1.setBackground(Color.black);
-        B1.setForeground(Color.white);
+       backgroundColor = B1.getBackground();
+        B1.setBackground(backgroundColor);
         B1.setMessage(message);
         B1.setForeground(Color.black);
-        B1.sleep(delaie);
-        B1.setForeground(Color.white);
-        B1.sleep(delaie);
+        B1.sleep(delaie/2);
+        B1.setForeground(backgroundColor);
+        B1.sleep(delaie/2);
         
        // B1.setMessage(message);
+       
     }
 }
 
