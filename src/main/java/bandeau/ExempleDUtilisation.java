@@ -5,13 +5,17 @@ import java.awt.Font;
 
 public class ExempleDUtilisation {
     private final Bandeau monBandeau = new Bandeau();
+    private Scenario test = new Scenario();
     
     public static void main(String[] args) {
 	    new ExempleDUtilisation().exemple();
     }
     
     public void exemple() {
-        Font font = monBandeau.getFont();
+        EnNoirEtBlanc effet = new EnNoirEtBlanc("Coucou c'est moi",1000);
+        test.addeffet(effet, 1);
+        test.afficheSur(monBandeau);
+       /* Font font = monBandeau.getFont();
         Color back = monBandeau.getBackground();
         Color fore = monBandeau.getForeground();
 
@@ -55,5 +59,5 @@ public class ExempleDUtilisation {
 		monBandeau.setBackground(back);
 		monBandeau.setMessage("Termine");
 		//System.exit(0);
-   }
+  */ }
 }

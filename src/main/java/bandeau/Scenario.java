@@ -4,20 +4,27 @@
  * and open the template in the editor.
  */
 package bandeau;
-
+import java.util.*;
 /**
  *
  * @author asegrest
  */
 public class Scenario{
-    private final Bandeau monBandeau = new Bandeau();
+   
+    public List<EFFET> listeEffet = new LinkedList<>();
     
-    public static void main(String[] args) {
-	    new Scenario().exemple();
+    
+    public void addeffet(EFFET e,int repetition){
+        for (int i = 0; i < repetition; i++) {
+            listeEffet.add(e);
+        }
+        
     }
     
-    public void exemple(){
-        
+    public void afficheSur(Bandeau monBandeau){
+        for(EFFET e:listeEffet){
+            e.affichesur(monBandeau);
+        }
     }
     
 }
