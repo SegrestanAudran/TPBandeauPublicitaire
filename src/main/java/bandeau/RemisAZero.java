@@ -21,8 +21,10 @@ public class RemisAZero extends EFFET{
     }
     
     public void afficheSur(Bandeau B1){
-         B1.setBackground(Color.white);
-         B1.setForeground(Color.black);
+        //Remettre les couleurs de base
+        B1.setBackground(Color.white);
+        B1.setForeground(Color.black);
+        //Remettre le texte dans l'axe par defaut
         B1.setRotation(0);
         B1.setMessage(message);
         B1.sleep(delaie);

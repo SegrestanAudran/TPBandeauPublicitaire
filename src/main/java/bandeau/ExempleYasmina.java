@@ -32,7 +32,7 @@ public class ExempleYasmina {
         test.addeffet(effet6, 1);
 
         
-        test.addeffet(effet3,1 );
+        test.addeffet(effet3,4 );
        // test.addeffet(effet1, 1);
         test.addeffet(effet2, 4);
         
