@@ -14,12 +14,14 @@ public class ExempleDUtilisation {
     public void exemple() {
         EnNoirEtBlanc effet = new EnNoirEtBlanc("Coucou c'est moi",1000);
         Rotation effet1 = new Rotation("Coucou je tourne !",1000,90);
-        Clignoter effet2 = new Clignoter("Coucou je suis sensé clignoter",1000);
-        RandomRotation effet3 = new RandomRotation("Coucou je tourne !",1000);
+        //Clignoter effet2 = new Clignoter("Coucou je suis sensé clignoter",1000);
+        RandomRotation effet3 = new RandomRotation("Coucou je tourne !",100);
+        RandomZoom effet4 = new RandomZoom("Zooom, Zoom, Zoom");
         test.addeffet(effet, 1);
         test.addeffet(effet1, 3);
-        test.addeffet(effet2, 4);
+        //test.addeffet(effet2, 4);
         test.addeffet(effet3, 4);
+        test.addeffet(effet4, 10);
         test.afficheSur(monBandeau);
        /* Font font = monBandeau.getFont();
         Color back = monBandeau.getBackground();

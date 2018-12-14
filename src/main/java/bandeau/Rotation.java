@@ -26,7 +26,7 @@ public class Rotation extends EFFET{
         angleactuel=b.getRotation();
         for (int i = 0; i <= 10; i++) {
 			b.setRotation(angleactuel+angle*Math.PI*i/1800);
-			b.sleep(100);
+			b.sleep(10);
 		}
         b.sleep(delaie);
     }
