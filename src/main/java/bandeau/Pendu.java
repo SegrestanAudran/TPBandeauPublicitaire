@@ -30,10 +30,7 @@ public class Pendu extends EFFET {
         s=false;
         while(s==false){
             i =random.nextInt(message.length());
-            if(ordre.contains(i)){
-           
-        }
-            else{
+            if(!ordre.contains(i)){
                 ordre.add(i);
             }
         if(ordre.size()== message.length()){
