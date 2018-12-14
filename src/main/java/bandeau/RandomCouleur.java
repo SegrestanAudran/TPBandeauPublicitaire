@@ -22,21 +22,27 @@ public class RandomCouleur extends EFFET{
         this.message =message;
         this.delaie=delaie;
     }
-
     
+    
+
+    public Color RandomC(){
+        int High=255;
+        int Low = 0;
+        Random re = new Random(); 
+        int p1 = re.nextInt(High - Low) + Low;
+        int p2 = re.nextInt(High - Low) + Low;
+        int p3 = re.nextInt(High - Low) + Low;
+      
+        Color randomColor = new Color(p1, p2, p3);
+        return randomColor;
+    }
     
     public void afficheSur(Bandeau B1){
-        Random rand = new Random();
-        float r = rand.nextFloat();
-        float g = rand.nextFloat();
-        float b = rand.nextFloat();
-        Color randomColor = new Color(r, g, b);
-        float rB = rand.nextFloat();
-        float gB = rand.nextFloat();
-        float bB = rand.nextFloat();
-        Color randomBackground = new Color(rB,gB,bB);
-        B1.setBackground(randomBackground);
-        B1.setForeground(randomColor);
+        //appel à la méthode RandomC pour avoir une couleur aléatoire
+        //Pour le fond
+        B1.setBackground(this.RandomC());
+        //Pour le message
+        B1.setForeground(this.RandomC());
         B1.setMessage(message);
        // B1.setForeground(Color.black);
         B1.sleep(delaie);

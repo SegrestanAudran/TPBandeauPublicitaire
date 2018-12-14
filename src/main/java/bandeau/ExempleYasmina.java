@@ -16,11 +16,27 @@ public class ExempleYasmina {
        // Rotation effet1 = new Rotation("Coucou je tourne !",1000,90);
         Clignoter effet2 = new Clignoter("Coucou je suis sensé clignoter",1000);
         RandomCouleur effet3 = new RandomCouleur("Coucou je me change",1000);
-        
+         Rotation effet1 = new Rotation("Coucou je tourne !",1000,90);
+         RemisAZero effet6 = new RemisAZero("On se met bien !",1000);
+
+        //Clignoter effet2 = new Clignoter("Coucou je suis sensé clignoter",1000);
+        RandomRotation effet5 = new RandomRotation("Coucou je tourne !",100);
+        RandomZoom effet4 = new RandomZoom("Zooom, Zoom, Zoom");
         test.addeffet(effet, 1);
-        test.addeffet(effet3, 6);
+        test.addeffet(effet1, 1);
+        test.addeffet(effet5, 1);
+        test.addeffet(effet6, 1);
+
+        test.addeffet(effet1, 1);
+        
+        test.addeffet(effet6, 1);
+
+        
+        test.addeffet(effet3,4 );
        // test.addeffet(effet1, 1);
         test.addeffet(effet2, 4);
+        
+        test.addeffet(effet6, 1);
         
         test.afficheSur(monBandeau);
        /* Font font = monBandeau.getFont();
