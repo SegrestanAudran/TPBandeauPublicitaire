@@ -22,6 +22,16 @@ public class ExempleDUtilisation {
         //test.addeffet(effet2, 4);
         test.addeffet(effet3, 4);
         test.addeffet(effet4, 10);
+
+       // Rotation effet1 = new Rotation("Coucou je tourne !",1000,90);
+        Clignoter effet2 = new Clignoter("Coucou je suis sensé clignoter",1000);
+        RandomCouleur effet5 = new RandomCouleur("Coucou je me change",1000);
+        
+        test.addeffet(effet, 1);
+        test.addeffet(effet5, 6);
+       // test.addeffet(effet1, 1);
+        test.addeffet(effet2, 4);
+        
         test.afficheSur(monBandeau);
        /* Font font = monBandeau.getFont();
         Color back = monBandeau.getBackground();
@@ -66,6 +76,6 @@ public class ExempleDUtilisation {
 		monBandeau.setForeground(fore);
 		monBandeau.setBackground(back);
 		monBandeau.setMessage("Termine");
-		//System.exit(0);
-  */ }
+		*/System.exit(10);
+  }
 }
