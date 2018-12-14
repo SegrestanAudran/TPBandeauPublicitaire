@@ -4,6 +4,7 @@
  * and open the template in the editor.
  */
 package bandeau;
+
 import java.awt.Color;
 import java.awt.Font;
 import java.util.Random;
@@ -12,26 +13,25 @@ import java.util.Random;
  *
  * @author asegrest
  */
-public class RandomZoom extends EFFET{
+public class Zoom extends EFFET{
     public Random random = new Random();
     public String message;
     
-    public RandomZoom(String message){
+    public Zoom(String message){
         this.message = message;
     }
     
     
     public void afficheSur(Bandeau b){
-    b.setFont(new Font("Dialog", Font.BOLD, 5));
     b.setMessage(message);
     b.setForeground(Color.black);
     b.setBackground(Color.white);
     
-   //for (int i = 5; i < random.nextInt(100) ; i+=5) {
-//	b.setFont(new Font("Dialog", Font.BOLD, 5+i));
-//	b.sleep(10);
- // }
-    b.setFont(new Font("Dialog", Font.BOLD,random.nextInt(100) ));
+    for (int i = 5; i < 60 ; i+=5) {
+	b.setFont(new Font("Dialog", Font.BOLD, 5+i));
+	b.sleep(10);
+    }
+    //b.setFont(new Font("Dialog", Font.BOLD,random.nextInt(100) ));
     b.sleep(50);
     
     }

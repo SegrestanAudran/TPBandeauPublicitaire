@@ -12,7 +12,7 @@ public class ExempleDUtilisation {
     }
     
     public void exemple() {
-        EnNoirEtBlanc effet = new EnNoirEtBlanc("Coucou c'est moi",1000);
+        /*EnNoirEtBlanc effet = new EnNoirEtBlanc("Coucou c'est moi",1000);
         Rotation effet1 = new Rotation("Coucou je tourne !",1000,90);
         //Clignoter effet2 = new Clignoter("Coucou je suis sensé clignoter",1000);
         RandomRotation effet3 = new RandomRotation("Coucou je tourne !",100);
@@ -31,7 +31,9 @@ public class ExempleDUtilisation {
         test.addeffet(effet5, 6);
        // test.addeffet(effet1, 1);
         test.addeffet(effet2, 4);
-        
+        */
+        Pendu effet8 = new Pendu("Coucou je suis pendu");
+        test.addeffet(effet8,1);
         test.afficheSur(monBandeau);
        /* Font font = monBandeau.getFont();
         Color back = monBandeau.getBackground();
