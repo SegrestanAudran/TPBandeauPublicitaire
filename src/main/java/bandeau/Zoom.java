@@ -16,9 +16,11 @@ import java.util.Random;
 public class Zoom extends EFFET{
     public Random random = new Random();
     public String message;
+    public int delaie;
     
-    public Zoom(String message){
+    public Zoom(String message, int delaie){
         this.message = message;
+        this.delaie = delaie;
     }
     
     
@@ -32,7 +34,7 @@ public class Zoom extends EFFET{
 	b.sleep(10);
     }
     //b.setFont(new Font("Dialog", Font.BOLD,random.nextInt(100) ));
-    b.sleep(50);
+    b.sleep(delaie);
     
     }
 }

@@ -6,6 +6,7 @@
 package bandeau;
 //Le noir et blanc
 import java.awt.Color;
+import java.awt.Font;
 
 /**
  *
@@ -26,6 +27,8 @@ public class RemisAZero extends EFFET{
         B1.setForeground(Color.black);
         //Remettre le texte dans l'axe par defaut
         B1.setRotation(0);
+        
+        B1.setFont(new Font("Dialog", Font.BOLD, 30));
         B1.setMessage(message);
         B1.sleep(delaie);
     }

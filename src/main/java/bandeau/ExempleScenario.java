@@ -18,24 +18,28 @@ public class ExempleScenario {
     }
     
     public void exemple() {
-        EnNoirEtBlanc effet = new EnNoirEtBlanc("Coucou c'est moi",1000);
+        EnNoirEtBlanc effet = new EnNoirEtBlanc("Black and White",1000);
+        Rotation effet1 = new Rotation("Coucou je tourne !",1000,90);
         Clignoter effet2 = new Clignoter("Coucou je suis sensé clignoter",1000);
         RandomCouleur effet3 = new RandomCouleur("Coucou je me change",1000);
-        Rotation effet1 = new Rotation("Coucou je tourne !",1000,90);
-        RemisAZero effet6 = new RemisAZero("On se met bien !",1000);
-        RandomRotation effet5 = new RandomRotation("Coucou je tourne !",100);
-        RandomZoom effet4 = new RandomZoom("Zooom, Zoom, Zoom");
+        Zoom effet4 = new Zoom("Zooom, Zoom, Zoom",1000);
+        RandomZoom effet5 = new RandomZoom("Zooom au hasard",1000);
+        RandomRotation effet6 = new RandomRotation("Coucou je tourne !",1000);
+        RemisAZero effet7 = new RemisAZero("On se met bien !",1000);
         Pendu effet8 = new Pendu("Coucou je suis pendu");
         Scenario.addeffet(effet, 1);
-        Scenario.addeffet(effet1, 1);
         Scenario.addeffet(effet5, 1);
-        Scenario.addeffet(effet6, 1);
         Scenario.addeffet(effet1, 1);
+        Scenario.addeffet(effet6, 1);
+        Scenario.addeffet(effet4, 1);
+        Scenario.addeffet(effet7, 1);
         Scenario.addeffet(effet6, 1);
         Scenario.addeffet(effet3,4 );
-        Scenario.addeffet(effet1, 1);
+        Scenario.addeffet(effet5,2 );
+        Scenario.addeffet(effet7, 1);
         Scenario.addeffet(effet2, 4);
         Scenario.addeffet(effet6, 1);
+        Scenario.addeffet(effet7,1);
         Scenario.addeffet(effet8,1);
         Scenario.afficheSur(monBandeau);
         System.exit(10);
