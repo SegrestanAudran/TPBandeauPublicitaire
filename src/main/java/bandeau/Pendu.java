@@ -22,6 +22,7 @@ public class Pendu extends EFFET {
         this.message = message;
     }
     
+    @Override
     public void afficheSur(Bandeau b){
         for(char p: message.toCharArray()){
             a.add(Character.toString(p));
@@ -35,6 +36,7 @@ public class Pendu extends EFFET {
             }
         if(ordre.size()== message.length()){
             s=true;
+        }
         }
         String o = new String();
         for (String t:c){
@@ -53,6 +55,6 @@ public class Pendu extends EFFET {
         }
         
         
-    }
+    
     
 }
